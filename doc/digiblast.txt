@@ -1,0 +1,20 @@
+1x CD74HC20 Dual 4-Input NAND Gates https://www.ti.com/lit/ds/symlink/sn74hc20.pdf
+1x MC74HC139 Dual 2-Line To 4-Line Decoders/Demultiplexers https://www.ti.com/lit/ds/symlink/sn74hc139.pdf
+1x TLC272CP LinCMOS PRECISION DUAL OPERATIONAL AMPLIFIERS https://www.ti.com/lit/ds/symlink/tlc272.pdf
+1x ZN428E-8 8-BIT LATCHED INPUT D-A CONVERTER https://www-users.cs.york.ac.uk/mjf5/pi_time/Datasheets/zn428.pdf
+1x 100R or 100K (?) pot
+1x 470k 5% R
+1x 4.7k 5% R
+1x ??? Small Diode
+1x Tantalum Cap???
+1x 1uF Electrolytic Cap	Cref for ZN428E
+1x 1uF ??? Electrolytic Cap
+1x 1uF ??? Electrolytic Cap
+1x 1uF ??? Electrolytic Cap
+1x ??? Ceramic Cap
+2x ??? Diode
+1x 100R 1/2W (?) 10% R
+1x 10k or 120R (???) R (5-band)
+1x 390R 10% R	Rref for ZN428E
+
+some electrolytics are tantalums on some boards
