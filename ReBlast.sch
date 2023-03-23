@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ReBlast"
-Date "2022-10-26"
+Date "2022-11-10"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Derived from work by Solder/Synergy"
@@ -16,23 +16,23 @@ $EndDescr
 $Comp
 L Amplifier_Operational:TLC272 U4
 U 1 1 637D1004
-P 4250 5085
-F 0 "U4" H 4250 5452 50  0000 C CNN
-F 1 "TLC272" H 4250 5361 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 4250 5085 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 4250 5085 50  0001 C CNN
-	1    4250 5085
+P 5605 4980
+F 0 "U4" H 5605 5347 50  0000 C CNN
+F 1 "TLC272" H 5605 5256 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 5605 4980 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 5605 4980 50  0001 C CNN
+	1    5605 4980
 	1    0    0    -1  
 $EndComp
 $Comp
 L Amplifier_Operational:TLC272 U4
 U 2 1 637D42E3
-P 4290 5955
-F 0 "U4" H 4290 6322 50  0000 C CNN
-F 1 "TLC272" H 4290 6231 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 4290 5955 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 4290 5955 50  0001 C CNN
-	2    4290 5955
+P 5695 5695
+F 0 "U4" H 5695 6062 50  0000 C CNN
+F 1 "TLC272" H 5695 5971 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 5695 5695 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 5695 5695 50  0001 C CNN
+	2    5695 5695
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -160,23 +160,12 @@ $EndComp
 $Comp
 L 74xx:74LS20 U1
 U 1 1 637E104A
-P 1080 5100
-F 0 "U1" H 1080 5475 50  0000 C CNN
-F 1 "74HC20" H 1080 5384 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 1080 5100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 1080 5100 50  0001 C CNN
-	1    1080 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS20 U1
-U 2 1 637E227B
-P 1095 5780
-F 0 "U1" H 1095 6155 50  0000 C CNN
-F 1 "74HC20" H 1095 6064 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 1095 5780 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 1095 5780 50  0001 C CNN
-	2    1095 5780
+P 1610 3700
+F 0 "U1" H 1610 4075 50  0000 C CNN
+F 1 "74HC20" H 1610 3984 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 1610 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 1610 3700 50  0001 C CNN
+	1    1610 3700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -193,23 +182,23 @@ $EndComp
 $Comp
 L 74xx:74LS139 U2
 U 1 1 637E830D
-P 2690 4995
-F 0 "U2" H 2690 5362 50  0000 C CNN
-F 1 "74LS139" H 2690 5271 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 2690 4995 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 2690 4995 50  0001 C CNN
-	1    2690 4995
+P 3145 3800
+F 0 "U2" H 3145 4167 50  0000 C CNN
+F 1 "74HC139" H 3145 4076 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 3145 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 3145 3800 50  0001 C CNN
+	1    3145 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS139 U2
 U 2 1 637E9326
-P 2655 5730
-F 0 "U2" H 2655 6097 50  0000 C CNN
-F 1 "74LS139" H 2655 6006 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 2655 5730 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 2655 5730 50  0001 C CNN
-	2    2655 5730
+P 3145 4855
+F 0 "U2" H 3145 5222 50  0000 C CNN
+F 1 "74HC139" H 3145 5131 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 3145 4855 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 3145 4855 50  0001 C CNN
+	2    3145 4855
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -217,7 +206,7 @@ L 74xx:74LS139 U2
 U 3 1 637E9ECD
 P 2675 6865
 F 0 "U2" H 2905 6911 50  0000 L CNN
-F 1 "74LS139" H 2905 6820 50  0000 L CNN
+F 1 "74HC139" H 2905 6820 50  0000 L CNN
 F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 2675 6865 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 2675 6865 50  0001 C CNN
 	3    2675 6865
@@ -549,7 +538,7 @@ phi2
 Text Label 1130 1895 0    50   ~ 0
 r_~w
 Text Label 1130 1995 0    50   ~ 0
-~cs
+~cs_in
 Entry Wire Line
 	1030 2195 1130 2095
 Entry Wire Line
@@ -620,7 +609,7 @@ phi2
 Text Label 4840 1895 0    50   ~ 0
 r_~w
 Text Label 4840 1995 0    50   ~ 0
-~cs
+~cs_sid
 Entry Wire Line
 	4740 2195 4840 2095
 Entry Wire Line
@@ -777,12 +766,178 @@ Wire Wire Line
 Connection ~ 8465 2540
 Wire Wire Line
 	8465 2540 8465 2130
+Wire Wire Line
+	1310 3550 1170 3550
+Text Label 1170 3550 0    50   ~ 0
+a3
+Text Notes 5065 3635 0    50   ~ 0
+DIGIBLASTER I/O ADDRESS: $fd5e/$fd5f\n(stolen from SID-Card, because unused by SID-Chip)
+Text Label 1130 2095 0    50   ~ 0
+a0
+Text Label 1130 2195 0    50   ~ 0
+a1
+Text Label 1130 2295 0    50   ~ 0
+a2
+Text Label 1130 2395 0    50   ~ 0
+a3
+Text Label 1130 2495 0    50   ~ 0
+a4
+Text Label 4840 2095 0    50   ~ 0
+a0
+Text Label 4840 2195 0    50   ~ 0
+a1
+Text Label 4840 2295 0    50   ~ 0
+a2
+Text Label 4840 2395 0    50   ~ 0
+a3
+Text Label 4840 2495 0    50   ~ 0
+a4
+$Comp
+L 74xx:74LS20 U1
+U 2 1 637E227B
+P 3170 5680
+F 0 "U1" H 3170 6055 50  0000 C CNN
+F 1 "74HC20" H 3170 5964 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 3170 5680 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 3170 5680 50  0001 C CNN
+	2    3170 5680
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6363E3A4
+P 1150 6270
+F 0 "#PWR?" H 1150 6120 50  0001 C CNN
+F 1 "+5V" H 1165 6443 50  0000 C CNN
+F 2 "" H 1150 6270 50  0001 C CNN
+F 3 "" H 1150 6270 50  0001 C CNN
+	1    1150 6270
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 6270 1150 6365
+$Comp
+L power:+5V #PWR?
+U 1 1 6364296E
+P 2675 6270
+F 0 "#PWR?" H 2675 6120 50  0001 C CNN
+F 1 "+5V" H 2690 6443 50  0000 C CNN
+F 2 "" H 2675 6270 50  0001 C CNN
+F 3 "" H 2675 6270 50  0001 C CNN
+	1    2675 6270
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2675 6270 2675 6365
+Wire Wire Line
+	1150 7365 1150 7460
+$Comp
+L power:GNDD #PWR?
+U 1 1 6364D192
+P 1150 7460
+F 0 "#PWR?" H 1150 7210 50  0001 C CNN
+F 1 "GNDD" H 1154 7305 50  0000 C CNN
+F 2 "" H 1150 7460 50  0001 C CNN
+F 3 "" H 1150 7460 50  0001 C CNN
+	1    1150 7460
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2675 7365 2675 7460
+$Comp
+L power:GNDD #PWR?
+U 1 1 6364E268
+P 2675 7460
+F 0 "#PWR?" H 2675 7210 50  0001 C CNN
+F 1 "GNDD" H 2679 7305 50  0000 C CNN
+F 2 "" H 2675 7460 50  0001 C CNN
+F 3 "" H 2675 7460 50  0001 C CNN
+	1    2675 7460
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1310 3650 1170 3650
+Wire Wire Line
+	1310 3750 1170 3750
+Wire Wire Line
+	1310 3850 1170 3850
+Text Label 1170 3650 0    50   ~ 0
+a2
+Text Label 1170 3750 0    50   ~ 0
+a1
+Text Label 1170 3850 0    50   ~ 0
+a4
+Wire Wire Line
+	2645 4755 2155 4755
+Text Label 2155 4755 0    50   ~ 0
+a0
+Wire Wire Line
+	3645 4755 4125 4755
+Wire Wire Line
+	3645 3700 4135 3700
+Wire Wire Line
+	3645 3900 4135 3900
+Wire Wire Line
+	2645 4000 2195 4000
+Text Label 2195 4000 0    50   ~ 0
+~cs_in
+Text Notes 4205 4790 0    50   ~ 0
+$FD5E
+Text Notes 4205 4990 0    50   ~ 0
+$FD5F
+Text Label 4125 4755 2    50   ~ 0
+~cs_dac_w
+Wire Wire Line
+	1910 3700 2645 3700
+Text Label 2080 3700 0    50   ~ 0
+~digiaddr
+Wire Wire Line
+	2645 4855 2155 4855
+Text Label 2155 4855 0    50   ~ 0
+r_~w
+Wire Wire Line
+	2645 3800 2555 3800
+Wire Wire Line
+	2555 3800 2555 4140
+$Comp
+L power:GNDD #PWR?
+U 1 1 636EFB85
+P 2555 4140
+F 0 "#PWR?" H 2555 3890 50  0001 C CNN
+F 1 "GNDD" H 2559 3985 50  0000 C CNN
+F 2 "" H 2555 4140 50  0001 C CNN
+F 3 "" H 2555 4140 50  0001 C CNN
+	1    2555 4140
+	1    0    0    -1  
+$EndComp
+Text Label 4135 3700 2    50   ~ 0
+~cs_dac_adc
+Text Label 4135 3900 2    50   ~ 0
+~cs_sid
+NoConn ~ 3645 3800
+NoConn ~ 3645 4000
+Wire Wire Line
+	2645 5055 2155 5055
+Text Label 2155 5055 0    50   ~ 0
+~cs_dac_adc
+Wire Wire Line
+	3645 4855 4125 4855
+Text Label 4125 4855 2    50   ~ 0
+~cs_dac_r
+Wire Wire Line
+	3645 4955 4125 4955
+Text Label 4125 4955 2    50   ~ 0
+~cs_adc_w
+Wire Wire Line
+	3645 5055 4125 5055
+Text Label 4125 5055 2    50   ~ 0
+~cs_adc_r
 Wire Bus Line
 	8465 940  8465 1430
 Wire Bus Line
-	1030 2195 1030 2595
-Wire Bus Line
 	4740 2195 4740 2595
+Wire Bus Line
+	1030 2195 1030 2595
 Wire Bus Line
 	10465 940  10465 1830
 Wire Bus Line
