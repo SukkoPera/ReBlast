@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L Amplifier_Operational:TLC272 U4
 U 2 1 637D42E3
-P 7025 8750
-F 0 "U4" H 7025 9025 50  0000 C CNN
-F 1 "TLC272" H 7025 9116 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 7025 8750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 7025 8750 50  0001 C CNN
-	2    7025 8750
+P 7925 7005
+F 0 "U4" H 7925 7280 50  0000 C CNN
+F 1 "TLC272" H 7925 7371 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 7925 7005 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 7925 7005 50  0001 C CNN
+	2    7925 7005
 	1    0    0    1   
 $EndComp
 $Comp
@@ -30,7 +30,7 @@ U 3 1 637D582D
 P 1905 10155
 F 0 "U4" H 1863 10201 50  0000 L CNN
 F 1 "TLC272" H 1863 10110 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 1905 10155 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 1905 10155 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 1905 10155 50  0001 C CNN
 	3    1905 10155
 	1    0    0    -1  
@@ -41,7 +41,7 @@ U 1 1 637D86B4
 P 13335 4895
 F 0 "U3" H 13335 5610 50  0000 C CNN
 F 1 "ZN428E-8" H 13335 5519 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 13335 4895 50  0001 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 13335 4895 50  0001 C CNN
 F 3 "DOCUMENTATION" H 13335 4895 50  0001 C CNN
 	1    13335 4895
 	1    0    0    -1  
@@ -86,21 +86,21 @@ Connection ~ 12335 4055
 Text Label 11865 4055 0    50   ~ 0
 data_bus
 Text Label 12435 4545 0    50   ~ 0
-d6
-Text Label 12435 4645 0    50   ~ 0
-d7
-Text Label 14235 4545 2    50   ~ 0
-d5
-Text Label 14235 4645 2    50   ~ 0
-d4
-Text Label 14235 4745 2    50   ~ 0
-d3
-Text Label 14235 4845 2    50   ~ 0
-d2
-Text Label 14235 4945 2    50   ~ 0
 d1
-Text Label 14235 5045 2    50   ~ 0
+Text Label 12435 4645 0    50   ~ 0
 d0
+Text Label 14235 4545 2    50   ~ 0
+d2
+Text Label 14235 4645 2    50   ~ 0
+d3
+Text Label 14235 4745 2    50   ~ 0
+d4
+Text Label 14235 4845 2    50   ~ 0
+d5
+Text Label 14235 4945 2    50   ~ 0
+d6
+Text Label 14235 5045 2    50   ~ 0
+d7
 Wire Wire Line
 	14085 5145 14535 5145
 Wire Wire Line
@@ -168,28 +168,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 1025 10190 50  0001 C CNN
 $EndComp
 $Comp
 L 74xx:74LS139 U2
-U 1 1 637E830D
-P 3360 5925
-F 0 "U2" H 3360 6292 50  0000 C CNN
-F 1 "74HC139" H 3360 6201 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 3360 5925 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 3360 5925 50  0001 C CNN
-	1    3360 5925
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS139 U2
-U 2 1 637E9326
-P 3360 6980
-F 0 "U2" H 3360 7347 50  0000 C CNN
-F 1 "74HC139" H 3360 7256 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 3360 6980 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 3360 6980 50  0001 C CNN
-	2    3360 6980
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS139 U2
 U 3 1 637E9ECD
 P 2550 10190
 F 0 "U2" H 2780 10236 50  0000 L CNN
@@ -198,39 +176,6 @@ F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 2550 10190 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 2550 10190 50  0001 C CNN
 	3    2550 10190
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 637ED8BA
-P 10170 10635
-F 0 "R1" V 9963 10635 50  0000 C CNN
-F 1 "470k" V 10054 10635 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 10100 10635 50  0001 C CNN
-F 3 "~" H 10170 10635 50  0001 C CNN
-	1    10170 10635
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 637EE040
-P 7265 10630
-F 0 "R3" H 7335 10676 50  0000 L CNN
-F 1 "100R 1/2W" H 7335 10585 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 7195 10630 50  0001 C CNN
-F 3 "~" H 7265 10630 50  0001 C CNN
-	1    7265 10630
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 637EE1E0
-P 7020 8395
-F 0 "R4" V 7227 8395 50  0000 C CNN
-F 1 "10K" V 7136 8395 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6950 8395 50  0001 C CNN
-F 3 "~" H 7020 8395 50  0001 C CNN
-	1    7020 8395
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R5
@@ -244,114 +189,48 @@ F 3 "~" H 13040 1690 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT RV1
-U 1 1 637EEF73
-P 9720 10615
-F 0 "RV1" H 9651 10661 50  0000 R CNN
-F 1 "100K" H 9651 10570 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_ACP_CA14V-15_Vertical" H 9720 10615 50  0001 C CNN
-F 3 "~" H 9720 10615 50  0001 C CNN
-	1    9720 10615
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D D1
 U 1 1 637EFCF8
-P 13040 2290
-F 0 "D1" V 12994 2210 50  0000 R CNN
-F 1 "2.5V ZENER" V 13085 2210 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 13040 2290 50  0001 C CNN
-F 3 "~" H 13040 2290 50  0001 C CNN
-	1    13040 2290
+P 5905 9740
+F 0 "D1" V 5859 9660 50  0000 R CNN
+F 1 "2.5V ZENER" V 5950 9660 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5905 9740 50  0001 C CNN
+F 3 "~" H 5905 9740 50  0001 C CNN
+	1    5905 9740
 	0    1    1    0   
 $EndComp
 $Comp
 L Diode:1N5817 D2
 U 1 1 637F07D5
-P 11205 7860
-F 0 "D2" H 11205 8077 50  0000 C CNN
-F 1 "1N5817" H 11205 7986 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp" H 11205 7685 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 11205 7860 50  0001 C CNN
-	1    11205 7860
-	1    0    0    -1  
+P 8680 5545
+F 0 "D2" H 8680 5762 50  0000 C CNN
+F 1 "1N5817" H 8680 5671 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp" H 8680 5370 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 8680 5545 50  0001 C CNN
+	1    8680 5545
+	-1   0    0    1   
 $EndComp
 $Comp
 L Diode:1N5817 D3
 U 1 1 637F090D
-P 10885 8200
-F 0 "D3" V 10931 8280 50  0000 L CNN
-F 1 "1N5817" V 10840 8280 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp" H 10885 8025 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10885 8200 50  0001 C CNN
-	1    10885 8200
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:CP1 C2
-U 1 1 637F1A4A
-P 5305 10020
-F 0 "C2" H 5420 10066 50  0000 L CNN
-F 1 "C_TANTALUM" H 5420 9975 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 5305 10020 50  0001 C CNN
-F 3 "~" H 5305 10020 50  0001 C CNN
-	1    5305 10020
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1 C3
-U 1 1 637F22BD
-P 13575 2290
-F 0 "C3" H 13690 2336 50  0000 L CNN
-F 1 "4.7u" H 13690 2245 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 13575 2290 50  0001 C CNN
-F 3 "~" H 13575 2290 50  0001 C CNN
-	1    13575 2290
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1 C4
-U 1 1 637F2551
-P 10445 7860
-F 0 "C4" V 10697 7860 50  0000 C CNN
-F 1 "680n" V 10606 7860 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 10445 7860 50  0001 C CNN
-F 3 "~" H 10445 7860 50  0001 C CNN
-	1    10445 7860
-	0    -1   -1   0   
+P 7060 6695
+F 0 "D3" H 7060 6478 50  0000 C CNN
+F 1 "1N5817" H 7060 6569 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp" H 7060 6520 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 7060 6695 50  0001 C CNN
+	1    7060 6695
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:CP1 C5
 U 1 1 637F2824
-P 7130 10000
-F 0 "C5" H 7245 10046 50  0000 L CNN
-F 1 "CP1" H 7245 9955 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 7130 10000 50  0001 C CNN
-F 3 "~" H 7130 10000 50  0001 C CNN
-	1    7130 10000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1 C6
-U 1 1 637F2B75
-P 7610 10000
-F 0 "C6" H 7725 10046 50  0000 L CNN
-F 1 "CP1" H 7725 9955 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 7610 10000 50  0001 C CNN
-F 3 "~" H 7610 10000 50  0001 C CNN
-	1    7610 10000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 637F3978
-P 5270 10510
-F 0 "C1" H 5385 10556 50  0000 L CNN
-F 1 "CERAMIC" H 5385 10465 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 5308 10360 50  0001 C CNN
-F 3 "~" H 5270 10510 50  0001 C CNN
-	1    5270 10510
-	1    0    0    -1  
+P 6510 6905
+F 0 "C5" V 6258 6905 50  0000 C CNN
+F 1 "CP1" V 6349 6905 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 6510 6905 50  0001 C CNN
+F 3 "~" H 6510 6905 50  0001 C CNN
+	1    6510 6905
+	0    1    1    0   
 $EndComp
 $Comp
 L MOS_8580:MOS_8580 U5
@@ -359,7 +238,7 @@ U 1 1 63816DD7
 P 6510 2460
 F 0 "U5" H 6510 3475 50  0000 C CNN
 F 1 "MOS_8580" H 6510 3384 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 6510 2460 50  0001 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket" H 6510 2460 50  0001 C CNN
 F 3 "DOCUMENTATION" H 6510 2460 50  0001 C CNN
 	1    6510 2460
 	1    0    0    -1  
@@ -704,7 +583,7 @@ U 1 1 63890F9D
 P 2800 2460
 F 0 "J1" H 2800 3475 50  0000 C CNN
 F 1 "MOS_8580_Socket" H 2800 3384 50  0000 C CNN
-F 2 "ReBlast:DIP-28_Socket_LongPads" H 2800 2460 50  0001 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm" H 2800 2460 50  0001 C CNN
 F 3 "DOCUMENTATION" H 2800 2460 50  0001 C CNN
 	1    2800 2460
 	1    0    0    -1  
@@ -726,8 +605,6 @@ F 3 "" H 13040 1440 50  0001 C CNN
 	1    13040 1440
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13040 2440 13040 2550
 Wire Wire Line
 	1525 5675 1385 5675
 Text Label 1385 5675 0    50   ~ 0
@@ -824,344 +701,210 @@ Wire Wire Line
 Wire Wire Line
 	1525 5975 1385 5975
 Text Label 1385 5775 0    50   ~ 0
-a2
-Text Label 1385 5875 0    50   ~ 0
-a1
-Text Label 1385 5975 0    50   ~ 0
 a4
+Text Label 1385 5875 0    50   ~ 0
+a2
+Text Label 1385 5975 0    50   ~ 0
+a1
 Wire Wire Line
-	2860 6880 2370 6880
-Text Label 2370 6880 0    50   ~ 0
+	2860 5925 2370 5925
+Text Label 2370 5925 0    50   ~ 0
 a0
 Wire Wire Line
-	3860 6880 4340 6880
+	3860 6880 4350 6880
 Wire Wire Line
-	3860 5825 4350 5825
+	3860 6980 4350 6980
 Wire Wire Line
-	3860 6025 4350 6025
-Wire Wire Line
-	2860 6125 2410 6125
-Text Label 2410 6125 0    50   ~ 0
+	2860 7180 2410 7180
+Text Label 2410 7180 0    50   ~ 0
 ~cs_in
-Text Notes 4420 6915 0    50   ~ 0
+Text Notes 4340 5825 0    50   ~ 0
 $FD5E
-Text Notes 4420 7115 0    50   ~ 0
+Text Notes 4340 5925 0    50   ~ 0
 $FD5F
-Text Label 4340 6880 2    50   ~ 0
-~cs_dac_w
 Wire Wire Line
-	2125 5825 2860 5825
-Text Label 2295 5825 0    50   ~ 0
+	2125 5825 2485 5825
+Text Label 2480 5825 2    50   ~ 0
 ~digiaddr
 Wire Wire Line
-	2860 6980 2370 6980
-Text Label 2370 6980 0    50   ~ 0
+	1095 5955 605  5955
+Text Label 605  5955 0    50   ~ 0
 r_~w
 Wire Wire Line
-	2860 5925 2770 5925
+	2860 6880 2770 6880
 Wire Wire Line
-	2770 5925 2770 6265
+	2770 6880 2770 7220
 $Comp
 L power:GNDD #PWR0115
 U 1 1 636EFB85
-P 2770 6265
-F 0 "#PWR0115" H 2770 6015 50  0001 C CNN
-F 1 "GNDD" H 2774 6110 50  0000 C CNN
-F 2 "" H 2770 6265 50  0001 C CNN
-F 3 "" H 2770 6265 50  0001 C CNN
-	1    2770 6265
+P 2770 7220
+F 0 "#PWR0115" H 2770 6970 50  0001 C CNN
+F 1 "GNDD" H 2774 7065 50  0000 C CNN
+F 2 "" H 2770 7220 50  0001 C CNN
+F 3 "" H 2770 7220 50  0001 C CNN
+	1    2770 7220
 	1    0    0    -1  
 $EndComp
-Text Label 4350 5825 2    50   ~ 0
+Text Label 1620 6840 2    50   ~ 0
 ~cs_dac_adc
-Text Label 4350 6025 2    50   ~ 0
+Text Label 4350 6980 2    50   ~ 0
 ~cs_sid
-NoConn ~ 3860 5925
 NoConn ~ 3860 6125
 Wire Wire Line
-	2860 7180 2370 7180
-Text Label 2370 7180 0    50   ~ 0
+	1095 6155 605  6155
+Text Label 605  6155 0    50   ~ 0
 ~cs_dac_adc
 Wire Wire Line
-	3860 6980 4340 6980
-Text Label 4340 6980 2    50   ~ 0
-~cs_dac_r
+	3860 5825 4260 5825
+Text Label 4260 5825 2    50   ~ 0
+~cs_dac
 Wire Wire Line
-	3860 7080 4340 7080
-Text Label 4340 7080 2    50   ~ 0
-~cs_adc_w
-Text Label 2725 8025 0    50   ~ 0
+	3860 5925 4260 5925
+Text Label 4260 5925 2    50   ~ 0
+~cs_adc
+Text Label 1345 7355 0    50   ~ 0
 ~cs_adc_r
-Wire Wire Line
-	11055 7860 10885 7860
-Text Label 9955 7860 0    50   ~ 0
-phi2
-Wire Wire Line
-	10885 8050 10885 7860
-Connection ~ 10885 7860
-Wire Wire Line
-	10885 7860 10595 7860
-Wire Wire Line
-	10885 8350 10885 8430
-$Comp
-L power:GNDD #PWR0116
-U 1 1 64217964
-P 11240 8490
-F 0 "#PWR0116" H 11240 8240 50  0001 C CNN
-F 1 "GNDD" H 11244 8335 50  0000 C CNN
-F 2 "" H 11240 8490 50  0001 C CNN
-F 3 "" H 11240 8490 50  0001 C CNN
-	1    11240 8490
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:CP1 C7
 U 1 1 642211BB
-P 11600 8200
-F 0 "C7" H 11715 8246 50  0000 L CNN
-F 1 "6.8u" H 11715 8155 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 11600 8200 50  0001 C CNN
-F 3 "~" H 11600 8200 50  0001 C CNN
-	1    11600 8200
-	1    0    0    -1  
+P 6760 7105
+F 0 "C7" V 6920 7105 50  0000 C CNN
+F 1 "6.8u" V 7011 7105 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 6760 7105 50  0001 C CNN
+F 3 "~" H 6760 7105 50  0001 C CNN
+	1    6760 7105
+	0    1    1    0   
 $EndComp
+Text Notes 13290 2365 0    50   ~ 0
+Tantalum\ngoes here?
 Wire Wire Line
-	10295 7860 9955 7860
+	14105 7985 14255 7985
 Wire Wire Line
-	11355 7860 11600 7860
-Wire Wire Line
-	11600 8050 11600 7860
-Connection ~ 11600 7860
-Wire Wire Line
-	10885 8430 11240 8430
-Wire Wire Line
-	11600 8430 11600 8350
-Wire Wire Line
-	11240 8430 11240 8490
-Connection ~ 11240 8430
-Wire Wire Line
-	11240 8430 11600 8430
-Text Notes 10465 8980 0    50   ~ 0
-Simplified version of "Diode Pump" circuit\nfrom ZN427 datasheet: produces a negative\nvoltage sufficient for operation of that IC.
-Text Notes 10585 8155 2    50   ~ 0
-Maybe not\nelectrolytic?
-Text Notes 12085 7580 2    50   ~ 0
-Rext, should\nbe 56k, also\nunsure whether\nlast ring is\nbrown/red/orange...\n
-$Comp
-L ZN427E8:ZN427E8 U6
-U 1 1 64272514
-P 13335 7860
-F 0 "U6" H 13335 8625 50  0000 C CNN
-F 1 "ZN427E8" H 13335 8534 50  0000 C CNN
-F 2 "MODULE" H 13335 7860 50  0001 C CNN
-F 3 "DOCUMENTATION" H 13335 7860 50  0001 C CNN
-	1    13335 7860
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14085 7660 14235 7660
-Wire Wire Line
-	14085 7760 14235 7760
+	14105 8085 14255 8085
 Entry Wire Line
-	14335 7560 14235 7660
+	14355 7885 14255 7985
 Entry Wire Line
-	14335 7660 14235 7760
+	14355 7985 14255 8085
 Wire Wire Line
-	14085 7860 14235 7860
+	14105 8185 14255 8185
 Wire Wire Line
-	14085 7960 14235 7960
+	14105 8285 14255 8285
 Entry Wire Line
-	14335 7760 14235 7860
+	14355 8085 14255 8185
 Entry Wire Line
-	14335 7860 14235 7960
+	14355 8185 14255 8285
 Wire Wire Line
-	14085 8060 14235 8060
+	14105 8385 14255 8385
 Wire Wire Line
-	14085 8160 14235 8160
+	14105 8485 14255 8485
 Entry Wire Line
-	14335 7960 14235 8060
+	14355 8285 14255 8385
 Entry Wire Line
-	14335 8060 14235 8160
+	14355 8385 14255 8485
 Wire Bus Line
-	14335 6960 13815 6960
-Text Label 14235 7660 2    50   ~ 0
-d5
-Text Label 14235 7760 2    50   ~ 0
-d4
-Text Label 14235 7860 2    50   ~ 0
-d3
-Text Label 14235 7960 2    50   ~ 0
+	14355 7285 13835 7285
+Text Label 14255 7985 2    50   ~ 0
 d2
-Text Label 14235 8060 2    50   ~ 0
-d1
-Text Label 14235 8160 2    50   ~ 0
-d0
-Wire Wire Line
-	14085 7460 14235 7460
-Wire Wire Line
-	14085 7560 14235 7560
-Entry Wire Line
-	14335 7360 14235 7460
-Entry Wire Line
-	14335 7460 14235 7560
-Text Label 14235 7460 2    50   ~ 0
-d7
-Text Label 14235 7560 2    50   ~ 0
+Text Label 14255 8085 2    50   ~ 0
+d3
+Text Label 14255 8185 2    50   ~ 0
+d4
+Text Label 14255 8285 2    50   ~ 0
+d5
+Text Label 14255 8385 2    50   ~ 0
 d6
+Text Label 14255 8485 2    50   ~ 0
+d7
 Wire Wire Line
-	14085 8260 14440 8260
+	14105 7785 14255 7785
 Wire Wire Line
-	14440 8260 14440 7140
+	14105 7885 14255 7885
+Entry Wire Line
+	14355 7685 14255 7785
+Entry Wire Line
+	14355 7785 14255 7885
+Text Label 14255 7785 2    50   ~ 0
+d0
+Text Label 14255 7885 2    50   ~ 0
+d1
+Wire Wire Line
+	14105 7585 14460 7585
+Wire Wire Line
+	14460 7585 14460 7110
 $Comp
 L power:+5V #PWR0117
 U 1 1 642AAD2B
-P 14440 7140
-F 0 "#PWR0117" H 14440 6990 50  0001 C CNN
-F 1 "+5V" H 14455 7313 50  0000 C CNN
-F 2 "" H 14440 7140 50  0001 C CNN
-F 3 "" H 14440 7140 50  0001 C CNN
-	1    14440 7140
+P 14460 7110
+F 0 "#PWR0117" H 14460 6960 50  0001 C CNN
+F 1 "+5V" H 14475 7283 50  0000 C CNN
+F 2 "" H 14460 7110 50  0001 C CNN
+F 3 "" H 14460 7110 50  0001 C CNN
+	1    14460 7110
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12585 8260 12435 8260
+	12605 8485 12455 8485
 Wire Wire Line
-	12435 8260 12435 8570
+	12455 8485 12455 8795
 $Comp
 L power:GNDD #PWR0118
 U 1 1 642B20D6
-P 12435 8570
-F 0 "#PWR0118" H 12435 8320 50  0001 C CNN
-F 1 "GNDD" H 12439 8415 50  0000 C CNN
-F 2 "" H 12435 8570 50  0001 C CNN
-F 3 "" H 12435 8570 50  0001 C CNN
-	1    12435 8570
+P 12455 8795
+F 0 "#PWR0118" H 12455 8545 50  0001 C CNN
+F 1 "GNDD" H 12459 8640 50  0000 C CNN
+F 2 "" H 12455 8795 50  0001 C CNN
+F 3 "" H 12455 8795 50  0001 C CNN
+	1    12455 8795
 	1    0    0    -1  
 $EndComp
-Text Label 12245 7660 0    50   ~ 0
-phi2
-Wire Wire Line
-	12585 7660 12245 7660
-Text Label 13815 6960 0    50   ~ 0
+Text Label 13835 7285 0    50   ~ 0
 data_bus
-Wire Wire Line
-	12585 7760 12245 7760
 $Comp
 L Device:R R2
 U 1 1 637EDE09
-P 11965 7860
-F 0 "R2" V 11758 7860 50  0000 C CNN
-F 1 "47k" V 11849 7860 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 11895 7860 50  0001 C CNN
-F 3 "~" H 11965 7860 50  0001 C CNN
-	1    11965 7860
-	0    1    1    0   
+P 6580 10000
+F 0 "R2" V 6787 10000 50  0000 C CNN
+F 1 "4.7k" V 6696 10000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6510 10000 50  0001 C CNN
+F 3 "~" H 6580 10000 50  0001 C CNN
+	1    6580 10000
+	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	12115 7860 12585 7860
-Wire Wire Line
-	11600 7860 11815 7860
 Wire Wire Line
 	3550 2010 4150 2010
 Text Label 4150 2010 2    50   ~ 0
 audio_jack
-Text Label 12245 7960 0    50   ~ 0
-audio_jack
-Wire Wire Line
-	12585 7960 12245 7960
-NoConn ~ 12585 7460
 Wire Wire Line
 	13040 1840 13040 2010
 Wire Wire Line
 	12335 5145 12335 5045
 Connection ~ 12335 5045
-Wire Wire Line
-	12335 5045 12080 5045
 Text Label 12080 5045 0    50   ~ 0
 vref
-Wire Wire Line
-	12585 8060 12510 8060
-Wire Wire Line
-	12585 8160 12510 8160
-Wire Wire Line
-	12510 8160 12510 8060
-Connection ~ 12510 8060
-Wire Wire Line
-	12510 8060 12245 8060
-Text Label 12245 8060 0    50   ~ 0
-vref
-Wire Wire Line
-	13040 2550 13305 2550
-Wire Wire Line
-	13575 2550 13575 2440
-Wire Wire Line
-	13575 2140 13575 2010
-Wire Wire Line
-	13575 2010 13040 2010
 Connection ~ 13040 2010
 Wire Wire Line
 	13040 2010 13040 2140
-Wire Wire Line
-	13040 2010 12690 2010
-Text Label 12690 2010 0    50   ~ 0
-vref
-$Comp
-L power:GNDD #PWR0119
-U 1 1 64373D06
-P 13305 2610
-F 0 "#PWR0119" H 13305 2360 50  0001 C CNN
-F 1 "GNDD" H 13309 2455 50  0000 C CNN
-F 2 "" H 13305 2610 50  0001 C CNN
-F 3 "" H 13305 2610 50  0001 C CNN
-	1    13305 2610
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13305 2550 13305 2610
-Connection ~ 13305 2550
-Wire Wire Line
-	13305 2550 13575 2550
-Text Notes 13945 2555 0    50   ~ 0
-ZN427 datasheet says 1u\nZN428 datasheet says 4.7u\nThe latter should be fine for both.\nDatasheets say this circuit can\ndrive up to 5 ICs so it should be\nfine for just 2.
 Text Notes 12775 1105 0    50   ~ 0
 VREF GENERATION CIRCUIT\n(From datasheets)
 Wire Wire Line
 	12335 5245 12335 5725
-Wire Wire Line
-	12215 4945 12585 4945
-Text Label 7795 8750 2    50   ~ 0
-audio_in
-Text Notes 12925 6825 0    50   ~ 0
+Text Notes 12935 6895 0    50   ~ 0
 ANALOG-TO-DIGITAL\nCONVERTER
 Text Notes 12960 3905 0    50   ~ 0
 DIGITAL-TO-ANALOG-\nCONVERTER
 Wire Wire Line
 	12585 4845 12215 4845
-Text Label 12245 7760 0    50   ~ 0
-~cs_adc_w
-Wire Wire Line
-	12585 7560 12245 7560
-Text Label 12245 7560 0    50   ~ 0
-cs_adc_r
-NoConn ~ 4340 6980
 Text Label 12215 4845 0    50   ~ 0
-~cs_dac_w
+~cs_dac
 Wire Wire Line
-	3115 8025 2725 8025
+	1735 7355 1345 7355
 Wire Wire Line
 	3115 7925 2970 7925
 Wire Wire Line
 	2970 7925 2970 7825
 Wire Wire Line
-	3115 7725 2970 7725
-Connection ~ 2970 7725
-Wire Wire Line
-	2970 7725 2970 7585
-Wire Wire Line
 	3115 7825 2970 7825
 Connection ~ 2970 7825
-Wire Wire Line
-	2970 7825 2970 7725
 $Comp
 L power:+5V #PWR0120
 U 1 1 643D6020
@@ -1173,78 +916,372 @@ F 3 "" H 2970 7585 50  0001 C CNN
 	1    2970 7585
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3715 7875 4100 7875
-Text Label 4100 7870 2    50   ~ 0
-cs_adc_r
-Text Notes 12720 9000 0    50   ~ 0
-There is probably a typo in the ZN427 datasheet:\nthe RD signal is first indicated as "~RD~", which\nwould imply it is active-low, but a timing diagram\na few pages later shows it as a positive pulse, and\nit is also indicated again as "RD" further on.
-Text Notes 7145 10915 0    50   ~ 0
-Or inductor?
 NoConn ~ 3860 7180
 Text Notes 2535 5125 0    50   ~ 0
 ADDRESS DECODING
-Text Notes 4050 6235 0    50   ~ 0
+Text Notes 4010 7195 0    50   ~ 0
 Note we must NOT enable SID for\nthe addresses we "steal"!
-Text Notes 12875 9380 0    50   ~ 0
-Maybe only one of the 427 or\n428 VREF_OUT should be\nconnected?
-NoConn ~ 3655 10440
-NoConn ~ 3655 10640
-NoConn ~ 4255 10540
-Text Notes 3745 9960 0    50   ~ 0
-SPARES
-Wire Wire Line
-	6725 8650 6575 8650
-Wire Wire Line
-	6725 8850 6020 8850
-Wire Wire Line
-	6575 8650 6575 8395
-Wire Wire Line
-	6575 8395 6870 8395
-Wire Wire Line
-	7440 8395 7440 8750
-Wire Wire Line
-	7440 8750 7325 8750
-Connection ~ 6575 8650
-Wire Wire Line
-	7440 8750 7795 8750
-Connection ~ 7440 8750
-Wire Wire Line
-	7170 8395 7440 8395
-Text Label 12215 4945 0    50   ~ 0
+Text Label 12565 4945 2    50   ~ 0
 dac_output
-Text Label 6020 8850 0    50   ~ 0
-dac_output
+Text Label 12690 2010 0    50   ~ 0
+vref
+Wire Wire Line
+	13040 2010 12690 2010
+$Comp
+L power:+5V #PWR0122
+U 1 1 646EBB47
+P 1805 9760
+F 0 "#PWR0122" H 1805 9610 50  0001 C CNN
+F 1 "+5V" H 1820 9933 50  0000 C CNN
+F 2 "" H 1805 9760 50  0001 C CNN
+F 3 "" H 1805 9760 50  0001 C CNN
+	1    1805 9760
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1805 9760 1805 9855
+Wire Wire Line
+	1805 10455 1805 10550
+$Comp
+L power:GNDD #PWR0123
+U 1 1 646F659C
+P 1805 10550
+F 0 "#PWR0123" H 1805 10300 50  0001 C CNN
+F 1 "GNDD" H 1809 10395 50  0000 C CNN
+F 2 "" H 1805 10550 50  0001 C CNN
+F 3 "" H 1805 10550 50  0001 C CNN
+	1    1805 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADC0804:ADC0804 U6
+U 1 1 64279B4F
+P 13355 8035
+F 0 "U6" H 13355 8850 50  0000 C CNN
+F 1 "ADC0804" H 13355 8759 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 13355 8035 50  0001 C CNN
+F 3 "DOCUMENTATION" H 13355 8035 50  0001 C CNN
+	1    13355 8035
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C3
+U 1 1 637F22BD
+P 13040 2290
+F 0 "C3" H 13155 2336 50  0000 L CNN
+F 1 "1u" H 13155 2245 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 13040 2290 50  0001 C CNN
+F 3 "~" H 13040 2290 50  0001 C CNN
+	1    13040 2290
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12335 5045 12080 5045
+$Comp
+L Device:CP1 C4
+U 1 1 637F2551
+P 11790 5155
+F 0 "C4" H 11905 5201 50  0000 L CNN
+F 1 "C" H 11905 5110 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 11790 5155 50  0001 C CNN
+F 3 "~" H 11790 5155 50  0001 C CNN
+	1    11790 5155
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C2
+U 1 1 637F1A4A
+P 6325 9735
+F 0 "C2" H 6440 9781 50  0000 L CNN
+F 1 "4.7u" H 6440 9690 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 6325 9735 50  0001 C CNN
+F 3 "~" H 6325 9735 50  0001 C CNN
+	1    6325 9735
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11790 4945 11790 5005
+Wire Wire Line
+	11790 4945 12585 4945
+Wire Wire Line
+	11790 5305 11790 5495
+Wire Wire Line
+	11790 5495 12130 5495
+$Comp
+L power:GNDD #PWR0119
+U 1 1 64373D06
+P 13040 2610
+F 0 "#PWR0119" H 13040 2360 50  0001 C CNN
+F 1 "GNDD" H 13044 2455 50  0000 C CNN
+F 2 "" H 13040 2610 50  0001 C CNN
+F 3 "" H 13040 2610 50  0001 C CNN
+	1    13040 2610
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0124
+U 1 1 6435134A
+P 10430 1680
+F 0 "#PWR0124" H 10430 1430 50  0001 C CNN
+F 1 "GNDD" H 10434 1525 50  0000 C CNN
+F 2 "" H 10430 1680 50  0001 C CNN
+F 3 "" H 10430 1680 50  0001 C CNN
+	1    10430 1680
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0125
+U 1 1 64351B31
+P 10875 1680
+F 0 "#PWR0125" H 10875 1430 50  0001 C CNN
+F 1 "GNDA" H 10880 1507 50  0000 C CNN
+F 2 "" H 10875 1680 50  0001 C CNN
+F 3 "" H 10875 1680 50  0001 C CNN
+	1    10875 1680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10430 1680 10430 1565
+Wire Wire Line
+	10430 1565 10875 1565
+Wire Wire Line
+	10875 1565 10875 1680
+$Comp
+L 74xx:74LS139 U2
+U 2 1 637E9326
+P 3360 6980
+F 0 "U2" H 3360 7347 50  0000 C CNN
+F 1 "74HC139" H 3360 7256 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 3360 6980 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 3360 6980 50  0001 C CNN
+	2    3360 6980
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS139 U2
+U 1 1 637E830D
+P 3360 5925
+F 0 "U2" H 3360 6292 50  0000 C CNN
+F 1 "74HC139" H 3360 6201 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 3360 5925 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 3360 5925 50  0001 C CNN
+	1    3360 5925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2485 5825 2485 6980
+Wire Wire Line
+	2485 6980 2860 6980
+Connection ~ 2485 5825
+Wire Wire Line
+	2485 5825 2860 5825
+Wire Wire Line
+	2860 6125 2410 6125
+Text Label 2410 6125 0    50   ~ 0
+~cs_in
+Wire Wire Line
+	2970 7925 2970 8025
+Wire Wire Line
+	2970 8025 3115 8025
+Connection ~ 2970 7925
+Wire Wire Line
+	2970 7585 2970 7825
+Wire Wire Line
+	12605 7785 12335 7785
+Text Label 12335 7785 0    50   ~ 0
+r_~w
+Text Label 12130 5495 2    50   ~ 0
+audio_in
+Text Label 5875 6905 0    50   ~ 0
+audio_jack
+Wire Wire Line
+	6360 6905 5875 6905
+Wire Wire Line
+	8270 9500 7930 9500
+Connection ~ 8270 9500
+Wire Wire Line
+	8270 9625 8270 9500
+Wire Wire Line
+	8630 9500 8270 9500
+Text Notes 8540 9645 0    50   ~ 0
+Or inductor?
+$Comp
+L Device:C C1
+U 1 1 637F3978
+P 7045 9035
+F 0 "C1" V 6793 9035 50  0000 C CNN
+F 1 "CERAMIC" V 6884 9035 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 7083 8885 50  0001 C CNN
+F 3 "~" H 7045 9035 50  0001 C CNN
+	1    7045 9035
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1 C6
+U 1 1 637F2B75
+P 8270 9775
+F 0 "C6" H 8385 9821 50  0000 L CNN
+F 1 "CP1" H 8385 9730 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 8270 9775 50  0001 C CNN
+F 3 "~" H 8270 9775 50  0001 C CNN
+	1    8270 9775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 637EE040
+P 8780 9500
+F 0 "R3" V 8987 9500 50  0000 C CNN
+F 1 "100R 1/2W" V 8896 9500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8710 9500 50  0001 C CNN
+F 3 "~" H 8780 9500 50  0001 C CNN
+	1    8780 9500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 637ED8BA
+P 7250 9500
+F 0 "R1" V 7043 9500 50  0000 C CNN
+F 1 "470k" V 7134 9500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7180 9500 50  0001 C CNN
+F 3 "~" H 7250 9500 50  0001 C CNN
+	1    7250 9500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 637EEF73
+P 6825 9500
+F 0 "RV1" V 6618 9500 50  0000 C CNN
+F 1 "100K" V 6709 9500 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_ACP_CA14V-15_Vertical" H 6825 9500 50  0001 C CNN
+F 3 "~" H 6825 9500 50  0001 C CNN
+	1    6825 9500
+	0    1    1    0   
+$EndComp
+Connection ~ 7930 9500
+Wire Wire Line
+	7930 9500 7400 9500
+Wire Wire Line
+	6325 9500 6675 9500
+Wire Wire Line
+	6325 9035 6325 9500
+Connection ~ 6325 9500
+Wire Wire Line
+	7930 9500 7930 9035
+Wire Wire Line
+	7930 9035 7195 9035
+Wire Wire Line
+	6895 9035 6325 9035
+Wire Wire Line
+	6325 9500 5905 9500
 $Comp
 L Amplifier_Operational:TLC272 U4
 U 1 1 637D1004
-P 3955 10540
-F 0 "U4" H 3955 10815 50  0000 C CNN
-F 1 "TLC272" H 3955 10906 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 3955 10540 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 3955 10540 50  0001 C CNN
-	1    3955 10540
+P 7940 5545
+F 0 "U4" H 7940 5820 50  0000 C CNN
+F 1 "TLC272" H 7940 5911 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 7940 5545 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 7940 5545 50  0001 C CNN
+	1    7940 5545
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	6575 8650 6575 9125
+	8240 5545 8530 5545
 Wire Wire Line
-	6575 9320 6575 9470
+	8830 5545 8945 5545
+Wire Wire Line
+	8945 5545 8945 5205
+Wire Wire Line
+	8945 5205 7460 5205
+Wire Wire Line
+	7460 5205 7460 5445
+Wire Wire Line
+	7460 5445 7640 5445
+Wire Wire Line
+	7200 6905 7355 6905
+Wire Wire Line
+	8930 7005 8930 6665
+Wire Wire Line
+	8815 7005 8930 7005
+Wire Wire Line
+	6660 6905 6765 6905
+Wire Wire Line
+	5905 9590 5905 9500
+Wire Wire Line
+	5905 9890 5905 10000
+Wire Wire Line
+	5905 10000 6325 10000
+Wire Wire Line
+	6325 10000 6430 10000
+Wire Wire Line
+	6325 9885 6325 10000
+Wire Wire Line
+	6325 9500 6325 9585
+Wire Wire Line
+	7210 6695 7355 6695
+Wire Wire Line
+	7355 6695 7355 6905
+Connection ~ 7355 6905
+Wire Wire Line
+	7355 6905 7625 6905
+Wire Wire Line
+	6910 6695 6765 6695
+Wire Wire Line
+	6765 6695 6765 6905
+Connection ~ 6765 6905
+Wire Wire Line
+	6765 6905 6900 6905
+NoConn ~ 12605 7985
+Wire Wire Line
+	13040 2440 13040 2610
+Text Notes 14625 4805 0    50   ~ 0
+CHIP D1 = MSB\nVERY CONFUSING\nNUMBERING!
+Wire Wire Line
+	6910 7105 7625 7105
+Wire Wire Line
+	6610 7105 5905 7105
+NoConn ~ 3860 7080
+NoConn ~ 3860 6025
+Wire Wire Line
+	12605 7585 12235 7585
+Text Label 12235 7585 0    50   ~ 0
+~cs_adc
 $Comp
-L power:GNDA #PWR?
-U 1 1 6459A601
-P 6575 9470
-F 0 "#PWR?" H 6575 9220 50  0001 C CNN
-F 1 "GNDA" H 6580 9297 50  0000 C CNN
-F 2 "" H 6575 9470 50  0001 C CNN
-F 3 "" H 6575 9470 50  0001 C CNN
-	1    6575 9470
+L power:GNDA #PWR0116
+U 1 1 6490D101
+P 8270 10040
+F 0 "#PWR0116" H 8270 9790 50  0001 C CNN
+F 1 "GNDA" H 8275 9867 50  0000 C CNN
+F 2 "" H 8270 10040 50  0001 C CNN
+F 3 "" H 8270 10040 50  0001 C CNN
+	1    8270 10040
 	1    0    0    -1  
 $EndComp
-Text Notes 6220 9285 0    50   ~ 0
-We'd need a 20k\nresistor here...
-Text Notes 5000 10895 0    50   ~ 0
-Maybe decoupling\nfor opamp?
+Wire Wire Line
+	8270 9925 8270 10040
+$Comp
+L Device:R R4
+U 1 1 637EE1E0
+P 7050 6905
+F 0 "R4" V 7257 6905 50  0000 C CNN
+F 1 "10K" V 7166 6905 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6980 6905 50  0001 C CNN
+F 3 "~" H 7050 6905 50  0001 C CNN
+	1    7050 6905
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5905 9500 5905 7105
+Connection ~ 5905 9500
+Text Notes 6945 7345 0    50   ~ 0
+100k ON\nSOME BOARDS
+Connection ~ 6325 10000
+Wire Wire Line
+	6975 9500 7100 9500
+Wire Wire Line
+	6730 10000 6925 10000
 Wire Bus Line
 	12335 4055 12335 4545
 Wire Bus Line
@@ -1258,5 +1295,5 @@ Wire Bus Line
 Wire Bus Line
 	7630 2510 7630 3210
 Wire Bus Line
-	14335 6960 14335 8060
+	14355 7285 14355 8385
 $EndSCHEMATC

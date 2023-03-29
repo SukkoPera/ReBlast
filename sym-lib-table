@@ -2,5 +2,5 @@
   (lib (name ZN428E8)(type Legacy)(uri ${KIPRJMOD}/libs/ZN428E8.lib)(options "")(descr ""))
   (lib (name MOS_8580)(type Legacy)(uri ${KIPRJMOD}/libs/MOS_8580.lib)(options "")(descr ""))
   (lib (name void)(type Legacy)(uri ${KIPRJMOD}/libs/void.lib)(options "")(descr ""))
-  (lib (name ZN427E8)(type Legacy)(uri ${KIPRJMOD}/libs/ZN427E8.lib)(options "")(descr ""))
+  (lib (name ADC0804)(type Legacy)(uri ${KIPRJMOD}/libs/ADC0804.lib)(options "")(descr ""))
 )
