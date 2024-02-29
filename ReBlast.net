@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/ReBlast/ReBlast.sch)
-    (date "Thu 29 Feb 2024 18:52:02 CET")
+    (date "Thu 29 Feb 2024 19:08:33 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -66,7 +66,7 @@
       (tstamp 63816DD7))
     (comp (ref J1)
       (value MOS_8580_Socket)
-      (footprint Package_DIP:DIP-28_W15.24mm)
+      (footprint ReBlast:DIP-28_W15.24mm_Socket)
       (datasheet DOCUMENTATION)
       (libsource (lib MOS_8580) (part MOS_8580_Socket) (description ""))
       (sheetpath (names /) (tstamps /))
