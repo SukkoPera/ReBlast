@@ -790,7 +790,7 @@ NoConn ~ 3860 7180
 Text Notes 2535 5125 0    50   ~ 0
 ADDRESS DECODING
 Text Notes 4030 7310 0    50   ~ 0
-Note we must NOT enable SID for\nthe addresses we "steal"!\n(Thanks TLC)
+Note we must NOT enable SID for\nthe addresses we "steal"!
 Text Label 12565 4945 2    50   ~ 0
 dac_output
 Text Label 12690 2010 0    50   ~ 0
