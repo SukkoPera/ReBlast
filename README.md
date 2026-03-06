@@ -21,9 +21,12 @@ APOS's [Digital Composing Kit 2.0](https://plus4world.powweb.com/software/Digita
 
 ## Installation
 ### ReSeed
+Installation is very easy, in particular if your ReSeed card was build with the DC-DC step-up converter and no regulator at U6:
 - Remove the SID chip from your board.
 - Plug ReBlast where the SID chip was.
 - Plug the SID into the socket on the ReBlast board.
+
+If your ReSeed was built with the TL497 and/or with a linear regulator at U6, you will probably need to use a few chip sockets as "spacers" in order for the board to rise enough over the other components. If you really want to use a linear regulator, it is probably best to use an L78L09/L78L12 since they are much less tall than the LM7809/LM7812.
 
 When plugging ReSeed into your computer, it might feel like ReBlast is preventing it from being completely inserted, but the card should actually slide in enough to work correctly.
 
