@@ -31,7 +31,7 @@ If your ReSeed was built with the TL497 and/or with a linear regulator at U6, yo
 When plugging ReSeed into your computer, it might feel like ReBlast is preventing it from being completely inserted, but the card should actually slide in enough to work correctly.
 
 ### LittleSixteen
-TBD
+ReBlast has not yet been tested on a LittleSixteen board, but there is no reason why it should not work, except for physical fitting issues. Probably the usage of additional spacer sockets is necessary, as well as using smaller voltage regulators.
 
 ## Testing
 I suggest to use [WavePlay-SD](https://plus4world.powweb.com/software/WavePlay-SD), a great piece of software that plays music with superb quality. Enter the Setup menu with <kbd>CTRL+S</kbd> and select *INT. INTL DGB:0* using the *MOD* button.
