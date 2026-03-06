@@ -9,15 +9,15 @@ ReBlast is an 8-bit Digital-to-Analog + Analog-to-Digital converter add-on for C
 ![Board](https://raw.githubusercontent.com/SukkoPera/ReBlast/master/img/render-top.png)
 
 ## Summary
-ReBlast is basically a replica of [Solder of Synergy's Digi-Blaster](https://plus4world.powweb.com/hardware/Digi-Blaster). It uses the ZN428E DAC originally made by Ferranti and the ADC0804 ADC by TI. Both these chips are old-fashioned and out of production, but they can still be found relatively easily and cheaply.
+ReBlast is basically a replica of [Solder of Synergy's Digi-Blaster](https://plus4world.powweb.com/hardware/Digi-Blaster). It uses the [ZN428](doc/zn428.pdf) DAC originally made by Ferranti and the [ADC0804](doc/adc0804.pdf) ADC by Signetics. Both these chips are old-fashioned and out of production, but they can still be found relatively easily and cheaply.
 
 ReBlast was sized and shaped so that it fits perfectly on a [ReSeed](https://github.com/SukkoPera/ReSeed) card.
 
-The DAC feeds its output into the SID's EXT_IN pin, which means that you will heat it mixed with the computer audio or on the ouput jack on the ReSeed card. Similarly, the ADC takes its input from the ReSeed input jack.
+The DAC feeds its output into the SID's EXT_IN pin, which means that you will hear it mixed with the computer audio or on the output jack of the ReSeed card. Similarly, the ADC takes its input from the ReSeed input jack.
 
 The DAC part of ReBlast is compatible with [ReVox](https://github.com/SukkoPera/ReVox), but ReBlast can also take advantage of the SID to apply filters to the audio signal.
 
-You can use APOS's [Digital Composing Kit 2.0](https://plus4world.powweb.com/software/Digital_Composing_Kit_V2_0) or [the older version](https://plus4world.powweb.com/software/Digital_Composing_Kit) to sample, compose and edit samples.
+APOS's [Digital Composing Kit 2.0](https://plus4world.powweb.com/software/Digital_Composing_Kit_V2_0) or [the older version](https://plus4world.powweb.com/software/Digital_Composing_Kit) can be used to sample, compose and edit samples.
 
 ## Installation
 ### ReSeed
@@ -46,13 +46,13 @@ Keep in mind that since the DAC feeds its output into the SID's EXT_IN pin, so t
 Detailed information, including code, can be found on the [ReVox Wiki](https://github.com/SukkoPera/ReVox/wiki).
 
 ### ADC
-First of all, the ADC needs calibration. This can easily be done with the following BASIC line:
+The ADC is exposed at $FD5F or $FE9F (64863 decimal). First of all, it needs calibration. This can easily be done with the following BASIC line:
 
     DO : POKE 64863,0 : PRINT PEEK(64863) : LOOP
 
 Then use a screwdriver to turn the pot on the board until the displayed value is mostly stable around 128.
 
-The ADC is exposed at $FD5F or $FE9F. Writing any value starts the sampling process. Then at least 48 clock cycles must elapse before the sampled value can be read from the same register. Since the conversion is directly linked to the clock of the Plus/4, this means that the smallest timer value for timer 1 is 48.
+Writing any value to the register starts the sampling process. Then at least 48 clock cycles must elapse before the sampled value can be read from the same register. Since the conversion is directly linked to the clock of the Plus/4, this means that the smallest timer value for timer 1 is 48.
 
 ## Releases
 If you want to get this board produced, you are recommended to get [the latest release](https://github.com/SukkoPera/ReBlast/releases) rather than the current git version, as the latter might be under development and is not guaranteed to be working.
