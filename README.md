@@ -8,7 +8,11 @@ ReBlast is basically a replica of [Solder of Synergy's Digi-Blaster](https://plu
 
 ReBlast was sized and shaped so that it fits perfectly on a [ReSeed](https://github.com/SukkoPera/ReSeed) card.
 
+The DAC feeds its output into the SID's EXT_IN pin, which means that you will heat it mixed with the computer audio or on the ouput jack on the ReSeed card. Similarly, the ADC takes its input from the ReSeed input jack.
+
 The DAC part of ReBlast is compatible with [ReVox](https://github.com/SukkoPera/ReVox).
+
+You can use the included APOS's [Digital Composing Kit 2.0](https://plus4world.powweb.com/software/Digital_Composing_Kit_V2_0) or [the older version](https://plus4world.powweb.com/software/Digital_Composing_Kit) to sample, compose and edit Digis. Instructions for this program can be found on the main disk, as well as two help screens for each part of the program.
 
 ## Installation
 ### ReSeed
@@ -24,16 +28,26 @@ TBD
 ## Testing
 I suggest to use [WavePlay-SD](https://plus4world.powweb.com/software/WavePlay-SD), a great piece of software that plays music with superb quality. Enter the Setup menu with <kbd>CTRL+S</kbd> and select *INT. INTL DGB:0* using the *MOD* button.
 
+More software for the card can be found [here](https://plus4world.powweb.com/effects/Digi-Blaster_Support).
+
 ## Programming
 ### DAC
 ReVox has no buffer, which means it must be fed audio samples in real-time. This is not a trivial task and existing software should be analyzed in order to learn the best techniques to do so.
 
-The DAC is exposed at address $FD5E or $FE9E, while the ADC is at $FD5F or $FE9F.
+The DAC is exposed at address $FD5E or $FE9E.
+
+Keep in mind that since the DAC feeds its output into the SID's EXT_IN pin, so the volume for that must be set through $FD58. This also opens interesting possibilities since the SID can apply filters to the audio coming in through that pin. See [Second Mod](https://plus4world.powweb.com/software/Second_Mod) for an example of that.
 
 Detailed information, including code, can be found on the [ReVox Wiki](https://github.com/SukkoPera/ReVox/wiki).
 
 ### ADC
-TBD
+First of all, the ADC needs calibration. This can easily be done with the following BASIC line:
+
+    DO : POKE 64863,0 : PRINT PEEK(64863) : LOOP
+
+Then use a screwdriver to turn the pot on the Digiblaster until the displayed value is mostly stable around 128.
+
+The ADC is exposed at $FD5F or $FE9F. Writing any value starts the sampling process. Then at least 48 clock cycles must elapse before the sampled value can be read from the same register. Since the conversion is directly linked to the clock of the Plus/4, this means that the smallest timer value for timer 1 is 48.
 
 ## Releases
 If you want to get this board produced, you are recommended to get [the latest release](https://github.com/SukkoPera/ReBlast/releases) rather than the current git version, as the latter might be under development and is not guaranteed to be working.
