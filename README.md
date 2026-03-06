@@ -12,7 +12,7 @@ The DAC feeds its output into the SID's EXT_IN pin, which means that you will he
 
 The DAC part of ReBlast is compatible with [ReVox](https://github.com/SukkoPera/ReVox), but ReBlast can also take advantage of the SID to apply filters to the audio signal.
 
-You can use the included APOS's [Digital Composing Kit 2.0](https://plus4world.powweb.com/software/Digital_Composing_Kit_V2_0) or [the older version](https://plus4world.powweb.com/software/Digital_Composing_Kit) to sample, compose and edit Digis. Instructions for this program can be found on the main disk, as well as two help screens for each part of the program.
+You can use APOS's [Digital Composing Kit 2.0](https://plus4world.powweb.com/software/Digital_Composing_Kit_V2_0) or [the older version](https://plus4world.powweb.com/software/Digital_Composing_Kit) to sample, compose and edit samples.
 
 ## Installation
 ### ReSeed
