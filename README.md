@@ -6,7 +6,7 @@ ReBlast is an 8-bit Digital-to-Analog + Analog-to-Digital converter add-on for C
 ## Summary
 ReBlast is basically a replica of [Solder of Synergy's Digi-Blaster](https://plus4world.powweb.com/hardware/Digi-Blaster). It uses the ZN428E DAC originally made by Ferranti and the ADC0804 ADC by TI. Both these chips are old-fashioned and out of production, but they can still be found relatively easily and cheaply.
 
-ReBlast was sized and shaped so that it plugs easily on a [ReSeed](https://github.com/SukkoPera/ReSeed) card.
+ReBlast was sized and shaped so that it fits perfectly on a [ReSeed](https://github.com/SukkoPera/ReSeed) card.
 
 The DAC part of ReBlast is compatible with [ReVox](https://github.com/SukkoPera/ReVox).
 
@@ -25,11 +25,15 @@ TBD
 I suggest to use [WavePlay-SD](https://plus4world.powweb.com/software/WavePlay-SD), a great piece of software that plays music with superb quality. Enter the Setup menu with <kbd>CTRL+S</kbd> and select *INT. INTL DGB:0* using the *MOD* button.
 
 ## Programming
+### DAC
 ReVox has no buffer, which means it must be fed audio samples in real-time. This is not a trivial task and existing software should be analyzed in order to learn the best techniques to do so.
 
 The DAC is exposed at address $FD5E or $FE9E, while the ADC is at $FD5F or $FE9F.
 
 Detailed information, including code, can be found on the [ReVox Wiki](https://github.com/SukkoPera/ReVox/wiki).
+
+### ADC
+TBD
 
 ## Releases
 If you want to get this board produced, you are recommended to get [the latest release](https://github.com/SukkoPera/ReBlast/releases) rather than the current git version, as the latter might be under development and is not guaranteed to be working.
@@ -37,7 +41,7 @@ If you want to get this board produced, you are recommended to get [the latest r
 Every release is accompanied by its Bill Of Materials (BOM) file and any relevant notes about it, which you are recommended to read carefully.
 
 ## License
-The ReBlast documentation, including the design itself, is copyright &copy; SukkoPera 2022 and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The ReBlast documentation, including the design itself, is copyright &copy; SukkoPera 2024 and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 This documentation is distributed *as is* and WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES whatsoever with respect to its functionality, operability or use, including, without limitation, any implied warranties OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE or infringement. We expressly disclaim any liability whatsoever for any direct, indirect, consequential, incidental or special damages, including, without limitation, lost revenues, lost profits, losses resulting from business interruption or loss of data, regardless of the form of action or legal theory under which the liability may be asserted, even if advised of the possibility or likelihood of such damages.
 
