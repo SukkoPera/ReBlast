@@ -1,4 +1,9 @@
 # ReBlast
+
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/SukkoPera/ReBlast)
+![GitHub Release Date](https://img.shields.io/github/release-date/SukkoPera/ReBlast?color=blue&label=last%20release)
+![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/SukkoPera/ReBlast/latest?color=orange)
+
 ReBlast is an 8-bit Digital-to-Analog + Analog-to-Digital converter add-on for Commodore 16, 116 and Plus/4 SIDcards.
 
 ![Board](https://raw.githubusercontent.com/SukkoPera/ReBlast/master/img/render-top.png)
@@ -62,7 +67,7 @@ This documentation is distributed *as is* and WITHOUT ANY EXPRESS OR IMPLIED WAR
 ## Support the Project
 If you want to get some boards manufactured, you can get them from PCBWay through this link:
 
-[![PCB from PCBWay](https://www.pcbway.com/project/img/images/frompcbway.png)](https://www.pcbway.com/project/shareproject/ReBlast_SIDcard_for_the_Commodore_16_Plus_4_c4967b6f.html)
+[![PCB from PCBWay](https://www.pcbway.com/project/img/images/frompcbway.png)](https://www.pcbway.com/project/shareproject/ReBlast_8_Bit_DAC_ADC_Add_On_for_Commodore_16_Plus4_SIDcards_3124785d.html)
 
 You get my gratitude and cheap, professionally-made and good quality PCBs, I get some credit that will help with this and [other projects](https://www.pcbway.com/project/member/shareproject/?bmbid=41100). You won't even have to worry about the various PCB options, it's all pre-configured for you!
 
@@ -70,7 +75,7 @@ Also, if you still have to register, [you can use this link](https://www.pcbway.
 
 You can also buy me a coffee if you want:
 
-<a href='https://ko-fi.com/L3L0U18L' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+<a href='https://ko-fi.com/L3L0U18L' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ## Thanks
 - Solder, for designing the original card and sharing its schematics.
